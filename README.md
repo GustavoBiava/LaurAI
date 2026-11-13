@@ -27,7 +27,7 @@ The CLI is interactive:
 3. Review the summary and confirm.
 4. The Skills of the chosen Packs are copied into the current directory.
 
-Requires Node.js 20 or newer and network access.
+Requires Node.js 24 or newer and network access.
 
 ### Where Skills are copied
 
