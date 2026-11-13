@@ -12,15 +12,19 @@
 
 Import sets of AI agent Skills into your current folder with a single command.
 
-> **Status:** MVP. The package is not published to npm yet.
+## Quick start
 
-## Usage
+There is nothing to install. Run it from the folder you want the Skills in:
 
 ```sh
 npx laurai
 ```
 
-The CLI is interactive:
+> **Status:** MVP.
+
+## Usage
+
+`npx laurai` is interactive:
 
 1. Pick one or more **Agents** (Claude Code, Codex, Opencode, Kilo Code).
 2. Pick one or more **Packs** from the Catalog.
