@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "packs": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "description": "Placeholder pack to verify your LaurAI setup",
+      "skills": ["hello-laurai"]
+    }
+  ]
+}
