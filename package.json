@@ -1,0 +1,58 @@
+{
+  "name": "laurai",
+  "version": "0.1.0",
+  "description": "Import sets of AI agent Skills into your current folder with a single command.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "laurai": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoBiava/LaurAI.git"
+  },
+  "homepage": "https://github.com/GustavoBiava/LaurAI#readme",
+  "bugs": {
+    "url": "https://github.com/GustavoBiava/LaurAI/issues"
+  },
+  "keywords": [
+    "cli",
+    "ai",
+    "agent",
+    "skills",
+    "claude-code",
+    "codex",
+    "opencode",
+    "kilo-code"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "check": "npm run lint && npm run format:check && npm run typecheck && npm run test"
+  },
+  "devDependencies": {
+    "@clack/prompts": "^1.9.0",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.19.2",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.10.1",
+    "tar": "^7.5.23",
+    "tsup": "^9.0.0",
+    "typescript": "~6.0",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^5.1.0",
+    "zod": "^4.6.7"
+  }
+}
