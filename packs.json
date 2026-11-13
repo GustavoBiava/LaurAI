@@ -6,6 +6,24 @@
       "name": "Starter",
       "description": "Placeholder pack to verify your LaurAI setup",
       "skills": ["hello-laurai"]
+    },
+    {
+      "id": "playwright-pro",
+      "name": "Playwright Pro",
+      "description": "Everything an agent needs to write, debug, scale and automate Playwright browser tests",
+      "skills": [
+        "playwright-best-practices",
+        "playwright-setup-config",
+        "playwright-locators",
+        "playwright-assertions-and-waiting",
+        "playwright-fixtures-and-pom",
+        "playwright-network-and-api",
+        "playwright-browser-interactions",
+        "playwright-snapshots-visual-a11y",
+        "playwright-debugging-and-reports",
+        "playwright-ci-and-scaling",
+        "playwright-agent-workflows"
+      ]
     }
   ]
 }
