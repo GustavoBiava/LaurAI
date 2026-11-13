@@ -1,6 +1,6 @@
 {
   "name": "laurai",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Import sets of AI agent Skills into your current folder with a single command.",
   "license": "MIT",
   "type": "module",
