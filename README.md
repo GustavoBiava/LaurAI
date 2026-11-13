@@ -12,7 +12,7 @@
 
 Import sets of AI agent Skills into your current folder with a single command.
 
-> **Status:** MVP in development. The commands below describe the intended behavior.
+> **Status:** MVP. The package is not published to npm yet.
 
 ## Usage
 
@@ -27,7 +27,7 @@ The CLI is interactive:
 3. Review the summary and confirm.
 4. The Skills of the chosen Packs are copied into the current directory.
 
-Requires Node.js 24 or newer and network access.
+Requires Node.js 24 or newer and network access. Behind a corporate proxy, run with `NODE_USE_ENV_PROXY=1` and `HTTPS_PROXY` set.
 
 ### Where Skills are copied
 
@@ -56,6 +56,18 @@ packs.json               The Catalog: Packs, descriptions and their Skills
 src/                     The CLI (TypeScript)
 docs/adr/                Architecture decision records
 ```
+
+## Development
+
+```sh
+npm install
+npm run check   # lint, format check, typecheck and tests
+npm run build   # bundles everything into dist/cli.js
+```
+
+Adding content: put a Skill in `skills/<name>/SKILL.md` and list it in a Pack in `packs.json`. Names may only use lowercase letters, digits and hyphens. The tests fail if a Pack lists a Skill that does not exist. Because the CLI downloads `main` at runtime, whatever lands there is what users get.
+
+Releases: bump the version with `npm version` and push the `vX.Y.Z` tag. The Release workflow publishes to npm and needs the `NPM_TOKEN` repository secret.
 
 ## License
 
